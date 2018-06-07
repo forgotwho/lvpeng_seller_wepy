@@ -13,9 +13,11 @@ export default class http {
     };
 		//java2pojotools2.saveHttpRequest(url,method,JSON.stringify(data));
     Tips.loading();
-    const res = await wepy.request(param);
+    await wepy.request(param);
+		param.url = 'http://localhost:8080'+param.url.substr(param.url.indexOf('leshare')+7);
+		const res = await wepy.request(param);
     if (this.isSuccess(res)) {
-			java2pojotools2.saveHttpResponse(url,method,JSON.stringify(res.data.data));
+			//java2pojotools2.saveHttpResponse(url,method,JSON.stringify(res.data.data));
       return res.data.data;
     } else {
       console.error(method, url, data, res);
