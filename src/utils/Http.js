@@ -1,6 +1,6 @@
 import wepy from 'wepy'
 import Tips from './Tips';
-const java2pojotools2 = require('../json2javapojo/java2pojotools2');
+//const java2pojotools2 = require('../json2javapojo/java2pojotools2');
 const app = getApp();
 
 // HTTP工具类
@@ -11,13 +11,9 @@ export default class http {
       method: method,
       data: data
     };
-		//java2pojotools2.saveHttpRequest(url,method,JSON.stringify(data));
     Tips.loading();
-    await wepy.request(param);
-		param.url = 'http://localhost:8080'+param.url.substr(param.url.indexOf('leshare')+7);
 		const res = await wepy.request(param);
     if (this.isSuccess(res)) {
-			//java2pojotools2.saveHttpResponse(url,method,JSON.stringify(res.data.data));
       return res.data.data;
     } else {
       console.error(method, url, data, res);

@@ -15,7 +15,8 @@
       auth: {},
       shop: {},
       appCode: 'XXX',
-      baseUrl: 'https://www.easy-mock.com/mock/5aa15ee0f6ed4a592fb5d6ec/leshare',
+      //baseUrl: 'https://www.easy-mock.com/mock/5aa15ee0f6ed4a592fb5d6ec/leshare',
+      baseUrl: 'http://localhost:8080',
       version: 'v3.0.0'
     };
     constructor() {
