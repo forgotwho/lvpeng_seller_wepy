@@ -1,6 +1,5 @@
 import wepy from 'wepy'
 import Tips from './Tips';
-//const java2pojotools2 = require('../json2javapojo/java2pojotools2');
 const app = getApp();
 
 // HTTP工具类
@@ -12,7 +11,7 @@ export default class http {
       data: data
     };
     Tips.loading();
-		const res = await wepy.request(param);
+    const res = await wepy.request(param);
     if (this.isSuccess(res)) {
       return res.data.data;
     } else {
