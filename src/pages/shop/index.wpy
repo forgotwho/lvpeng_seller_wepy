@@ -117,7 +117,7 @@
       NavLogout: Navigator,
       AvatarPanel: AvatarPanel,
       NavManusl: Navigator,
-      NavComment:Navigator
+      NavComment: Navigator
     };
     config = {
       navigationBarTitleText: '我的信息'

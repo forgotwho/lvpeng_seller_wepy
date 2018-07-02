@@ -24,7 +24,7 @@
 
   export default class NoticeItem extends wepy.component {
     props = {
-      category: {},
+      category: {}
       // index: {}
       // size: {}
     };

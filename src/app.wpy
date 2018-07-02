@@ -16,7 +16,7 @@
       shop: {},
       appCode: 'lvpeng',
       // baseUrl: 'https://www.easy-mock.com/mock/5aa15ee0f6ed4a592fb5d6ec/leshare',
-      baseUrl: 'http://localhost:8080',
+      baseUrl: 'https://api.minebrand.cn/seller',
       version: 'v3.0.0'
     };
     constructor() {
