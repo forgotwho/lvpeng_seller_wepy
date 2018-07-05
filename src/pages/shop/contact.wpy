@@ -1,15 +1,14 @@
 <template>
   <view class="container">
     <view class="header  column-center">
-      <text class="title">小程序，商家营销利器</text>
-      <text class="describe">帮助商家提前布局微信生态，抢占第一波红利</text>
+      <text class="title">小程序，您的品牌营销利器</text>
+      <text class="describe">帮助您提前布局微信生态，打造个人品牌</text>
       <view class="contact column-center" @tap="call">电话咨询</view>
       <image class="preview" mode="aspectFit" src="http://img.leshare.shop/leshare/xc.png"></image>
     </view>
     <view class="content">
-      <image class="solution" mode="widthFix" src="http://img.leshare.shop/leshare/solution.png"></image>
     </view>
-    <Copyright />
+    <Copyright buttom="true"/>
   </view>
 </template>
 
@@ -23,14 +22,14 @@
     def = {}
     data = {...this.def};
     onShareAppMessage () {
-      const title = '乐享商家助手';
+      const title = '我的品牌助手';
       const url = '/pages/home/index';
       return Tips.share(title, url, title);
     }
     methods = {
       call() {
         wepy.makePhoneCall({
-          phoneNumber: '059187519835'
+          phoneNumber: '13816638520'
         });
       }
     }
@@ -41,7 +40,7 @@
     mixins = [base];
     config = {
       navigationBarTitleText: '联系我们',
-      navigationBarBackgroundColor: '#11ca6f'
+      navigationBarBackgroundColor: '#1296db'
     };
   }
 </script>
@@ -49,7 +48,7 @@
 <style lang="scss">
   @import "../../styles/variable";
   .header {
-    background-color: #11ca6f;
+    background-color: #1296db;
     .title{
       font-size: $text-xxl;
       font-weight: bold;
@@ -62,7 +61,7 @@
       width: 160rpx;
       height: 60rpx;
       background-color: #FFF;
-      color: #11ca6f;
+      color: #1296db;
       margin-top: 20px;
     }
     .preview{

@@ -14,10 +14,10 @@
     globalData = {
       auth: {},
       shop: {},
-      appCode: 'lvpeng',
+      appCode: 'minebrand',
       // baseUrl: 'https://www.easy-mock.com/mock/5aa15ee0f6ed4a592fb5d6ec/leshare',
       baseUrl: 'https://api.minebrand.cn/seller',
-      version: 'v3.0.0'
+      version: 'v1.0.0'
     };
     constructor() {
       super();

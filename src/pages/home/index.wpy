@@ -3,7 +3,7 @@
   <view class="page" wx:if="{{init}}">
     <view class="brand column-center">
       <image class="logo" src="/images/home/shop-logo.png"/>
-      <text>乐享商家助手</text>
+      <text>我的品牌助手</text>
     </view>
     <form @submit="confirm">
       <view class="page__bd form">
@@ -131,7 +131,7 @@
       }
     };
     onShareAppMessage () {
-      const title = '乐享商家助手';
+      const title = '我的品牌助手';
       const url = '/pages/home/index';
       return Tips.share(title, url, title);
     }
@@ -165,7 +165,7 @@
     }
     mixins = [input, base];
     config = {
-      navigationBarTitleText: '商家登录'
+      navigationBarTitleText: '我的品牌'
     };
     components = {
       Tips: FormTips,
